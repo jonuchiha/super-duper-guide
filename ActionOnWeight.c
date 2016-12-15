@@ -1,7 +1,7 @@
 /**********************
 ActionOnWeight.c
 Jonathan Somarib
-A login program for entered patient files
+A login program for entering patient files
 December 2015
 ***********************/
 #include <stdio.h>
@@ -112,7 +112,7 @@ struct data CountFileLines(struct data action)
 {
 	FILE *fp3;
 	action.count_lines = 0;
-	/*Looks for and pens "username.txt" in read mode*/
+	/*Looks for and opens "username.txt" in read mode*/
 	fp3 = fopen("username.txt", "r");
 	action.chr = getc(fp3);
 	while (action.chr != EOF)
