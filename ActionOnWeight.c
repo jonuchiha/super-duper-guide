@@ -437,7 +437,6 @@ struct data NurseLogIn(struct data action)
 	int lines;
 	action = CountFileLines(action);
 	lines = action.count_lines / 3;
-	getch();
 	system("cls");
 	printf("Action on Weight - Log In\n");
 	printf("**************************\n\n");
